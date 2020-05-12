@@ -13,8 +13,8 @@ const QuoteGenerator = (props) => {
             <Row className="m-3">
                 <Col></Col>
                 <Col xs="auto">
-                    <h3>"Quote Goes Here"</h3>
-                    <p className="text-right light-text"><em>~ Author Goes Here</em></p>
+                    <h3>{props.quote}</h3>
+                    <p className="text-right light-text"><em>{props.quoteAuthor}</em></p>
                 </Col>
                 <Col></Col>
             </Row>
@@ -22,8 +22,7 @@ const QuoteGenerator = (props) => {
                 <Col className="mx-4 px-2">
                     <Button
                         onClick={props.handleClick}
-                        style={{ backgroundColor: '#333' }}
-                        block
+                        style={{ backgroundColor: '#333', width: '300px' }}
                     >Generate Quote
                     </Button>
                 </Col>
