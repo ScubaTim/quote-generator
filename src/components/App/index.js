@@ -21,12 +21,11 @@ class App extends Component {
     }
 
     handleClick = () => {
-        const quotesText = this.state.quotes.map(quote => quote.text)
-        const quotesAuthor = this.state.quotes.map(quote => quote.author)
+        const quoteText = this.state.quotes.map(quote => quote.text)
+        const quoteAuthor = this.state.quotes.map(quote => quote.author)
         const rand = Math.floor(Math.random() * this.state.quotes.length)
-        this.setState({ quote: quotesText[rand], quoteAuthor: quotesAuthor[rand] });
+        this.setState({ quote: quoteText[rand], quoteAuthor: (!quoteAuthor[rand] ? '~ Author Unknown' : `~ ${quoteAuthor[rand]}`) });
     }
-
     render() {
         return (
             <div className="main-container">
