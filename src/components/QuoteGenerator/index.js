@@ -7,7 +7,7 @@ const QuoteGenerator = (props) => {
         <div className="main-border text-center">
             <Row className="mt-3">
                 <Col>
-                    <h1>Random Famous Quotes</h1>
+                    <h1 className="pr-1">Random Famous Quotes</h1>
                 </Col>
             </Row>
             <Row className="m-3">
@@ -19,9 +19,10 @@ const QuoteGenerator = (props) => {
                 <Col></Col>
             </Row>
             <Row className="mt-3 mb-2">
-                <Col>
+                <Col className="mx-4 px-2">
                     <Button
-                        color="primary"
+                        style={{ backgroundColor: '#333' }}
+                        block
                     >Generate Quote
                     </Button>
                 </Col>
