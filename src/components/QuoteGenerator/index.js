@@ -21,6 +21,7 @@ const QuoteGenerator = (props) => {
             <Row className="mt-3 mb-2">
                 <Col className="mx-4 px-2">
                     <Button
+                        onClick={props.handleClick}
                         style={{ backgroundColor: '#333' }}
                         block
                     >Generate Quote

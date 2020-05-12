@@ -8,10 +8,16 @@ class App extends Component {
         quoteAuthor: ''
     }
 
+    handleClick = () => {
+        console.log('button clicked');
+    }
+
     render() {
         return (
-            <div class="main-container">
-                <QuoteGenerator />
+            <div className="main-container">
+                <QuoteGenerator
+                    handleClick={this.handleClick}
+                />
             </div>
         )
     }
