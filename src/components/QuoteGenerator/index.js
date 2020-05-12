@@ -13,7 +13,7 @@ const QuoteGenerator = (props) => {
             <Row className="m-3">
                 <Col></Col>
                 <Col xs="auto">
-                    <h3>"{props.quote}"</h3>
+                    <h3>{props.quote}</h3>
                     <p className="text-right light-text"><em>{props.quoteAuthor}</em></p>
                 </Col>
                 <Col></Col>

@@ -24,7 +24,7 @@ class App extends Component {
         const quoteText = this.state.quotes.map(quote => quote.text)
         const quoteAuthor = this.state.quotes.map(quote => quote.author)
         const rand = Math.floor(Math.random() * this.state.quotes.length)
-        this.setState({ quote: quoteText[rand], quoteAuthor: (!quoteAuthor[rand] ? '~ Author Unknown' : `~ ${quoteAuthor[rand]}`) });
+        this.setState({ quote: `"${quoteText[rand]}"`, quoteAuthor: (!quoteAuthor[rand] ? '~ Author Unknown' : `~ ${quoteAuthor[rand]}`) });
     }
     render() {
         return (
