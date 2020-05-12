@@ -1,0 +1,14 @@
+/*Colors*/
+$light-text: gray; 
+$blue: #0069d9;
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.light-text {
+    color: $light-text;
+}
+.blue-text {
+    color: $blue;
+}
