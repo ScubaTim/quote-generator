@@ -1,5 +1,5 @@
 .main-container {
-    margin-top: 25vh;
+    margin: 25vh 20vw 0 20vw;
     display: flex;
     justify-content: center;
 }

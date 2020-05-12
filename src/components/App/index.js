@@ -6,7 +6,7 @@ class App extends Component {
     state = {
         quotes: [],
         quote: 'Search for a quote',
-        quoteAuthor: null
+        quoteAuthor: ' '
     }
     componentDidMount() {
         const getQuotes = async () => {

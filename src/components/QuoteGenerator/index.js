@@ -14,7 +14,7 @@ const QuoteGenerator = (props) => {
                 <Col></Col>
                 <Col xs="auto">
                     <h3>{props.quote}</h3>
-                    <p className="text-right light-text"><em>{props.quoteAuthor}</em></p>
+                    <p className="text-right light-text"><em>{!props.quoteAuthor ? 'Author Unknown' : props.quoteAuthor}</em></p>
                 </Col>
                 <Col></Col>
             </Row>
